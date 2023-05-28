@@ -1,4 +1,6 @@
 @use "./utils/variables" as * ;
+@import "./utils/mixins" ;
+@import "./utils/common";
 @import "./components/button-nav" ;
 @import "./components/lorem" ;
 @import "./components/modal" ;
@@ -7,7 +9,6 @@
 @import "./components/operation" ;
 @import "./components/gallery" ;
 @import "./components/logo" ;
-@import "./utils/common";
 @import "./components/team";
 @import "./components/form-footer";
 @import "./components/modal-btn"

@@ -24,9 +24,17 @@
     <header>
       <div class="container container--main-body">
         <nav class="nav-header">
-          <a class="logo" href="./index.html"
-            >Web<span class="logo--dark">Studio</span></a
-          >
+        <a class="logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
+        <button
+          type="button"
+          class="toggle-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="toggle-btn__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
           <ul class="menu">
             <li>
               <a class="menu__link-nav menu__link-nav--primary" href="./index.html"
@@ -71,7 +79,9 @@
             Efektywne rozwiązania<br />
             dla waszego biznesu
           </h1>
-          <button class="modal-btn modal-btn--modal-open" type="button" data-modal-open>zamów usługę</button>
+          <button class="modal-btn modal-btn--modal-open" type="button" data-modal-open>
+            zamów usługę
+          </button>
         </div>
       </section>
       <!--2ga sekcja Lorem Ipsum-->
@@ -337,10 +347,7 @@
           <address>
             <ul class="footer">
               <li>
-                <a
-                  class="footer__maps"
-                  href="https://goo.gl/maps/4yjW4w5AXTQKJYEA8"
-                  target="_blank"
+                <a class="footer__maps" href="https://goo.gl/maps/4yjW4w5AXTQKJYEA8" target="_blank"
                   >m.Warszawa Aleje Jerozolimskie 21</a
                 >
               </li>
@@ -379,7 +386,13 @@
         <div class="form-footer">
           <form>
             <h4 class="form-footer__header">zapisz się do newslettera</h4>
-            <input type="email" class="form-footer__email" name="email" placeholder="E-mail" required />
+            <input
+              type="email"
+              class="form-footer__email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
             <button type="submit" class="form-footer__button">
               Zapisz się
               <svg class="form-footer__button-icon" width="24" height="24">
@@ -425,7 +438,12 @@
           </label>
           <div class="modal__checkbox-label">
             <label>
-              <input type="checkbox" name="policy" value="conditions" class="modal__checkbox-input" />
+              <input
+                type="checkbox"
+                name="policy"
+                value="conditions"
+                class="modal__checkbox-input"
+              />
               <span class="modal__policy-text">
                 Oświadczam iż akceptuję <a class="modal__policy" href="#">Regulamin </a> i
                 <a class="modal__policy" href="#">Politykę Prywatności.</a></span
