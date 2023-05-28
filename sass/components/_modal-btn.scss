@@ -1,0 +1,38 @@
+.modal-btn {
+    font-family: $fontPrimary;
+    background-color: $themeColor;
+    color: $lightColor;
+    font-weight: 700;
+    line-height: 1.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    &--modal-open {
+    padding: 10px 41px 10px 42px;
+    margin-top: 30px;
+    &:first-letter {
+    text-transform: uppercase;}
+ }
+  &--sent-button {
+  padding: 10px 76px;
+  margin: 0 164px 40px 164px;
+}
+}
+ .modal-close {
+    position: absolute;
+    box-shadow:none;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $lightColor;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  &__icon {
+    fill: #000;
+    position: relative;
+    top: 3px;
+  }
+}
+

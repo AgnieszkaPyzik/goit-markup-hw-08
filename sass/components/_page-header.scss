@@ -1,0 +1,52 @@
+.nav-header,
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 46px;
+}
+.menu__link-nav {
+  font-family: $fontPrimary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  &:hover svg,
+  &:focus svg,
+  &:hover,
+  &:focus {
+  $pharagraphColor: $themeColor;
+  color: $themeColor;
+  fill: $themeColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+.menu__link-nav--primary {
+  color: $brandColor;
+  position: relative;
+}
+.menu__link-nav--primary:is:hover, :focus, :active {
+  color: $themeColor;
+}
+.menu__link-nav--primary:active::after,
+.menu__link-nav--agency::after,
+.menu__link-nav--portfolio::after {
+  content: '';
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $themeColor;
+  display: block;
+  margin-top: 28px;
+}
+.menu__link-nav--secondary {
+  display: inline-flex;
+  color: $pharagraphColor;
+  align-items: center;
+}
+.menu__icon-nav {
+  fill: $pharagraphColor;
+  margin-right: 10px;
+}

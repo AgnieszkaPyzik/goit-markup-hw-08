@@ -1,0 +1,56 @@
+.operation {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 50px;
+
+    &__text {
+    position: relative;
+    display: inline-flex;
+  }
+    &__signature {
+    font-family: $fontPrimary;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: $lightColor;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 90px;
+  }
+  &__clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: $iconColor;
+    &:hover,
+    &:focus,
+    &:hover svg,
+    &:focus svg {
+        $iconColor: $themeColor;
+        border-color: $themeColor;
+        fill: $themeColor;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+.operation--profession {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.operation--customers {
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+
+ 

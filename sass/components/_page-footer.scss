@@ -1,0 +1,45 @@
+.footer {
+  padding: 20px 0 60px 0;
+&__maps,
+&__address {
+  font-family: $fontPrimary;
+  font-size: 14px;
+  line-height: 2.1;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+&__header {
+  text-transform: uppercase;
+  font-style: normal;
+  padding: 12px 0 20px 0;
+}
+&__media-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus,
+  &:hover svg,
+  &:focus svg {
+    background-color: $themeColor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ }
+ &__media-list {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+ }
+ &__media-icon {
+   fill: $lightColor;
+ }
+&__maps {
+  color: $lightColor;
+}
+&__address {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

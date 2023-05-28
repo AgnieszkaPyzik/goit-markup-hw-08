@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .section {
+    padding: 94px 0;
+    &__header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        color: $brandColor;
+      }
+    &--solution {
+      background-image: url(../images/overlay.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: $greyColor;
+    }
+    &--operational {
+      padding-top: 0;
+    }
+    &--team {
+      background-color: $backgroundColor;
+    }
+  }
+  svg {
+    fill: $iconColor;
+  }
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  &--end-body {
+      display: flex;
+      justify-content:space-between;
+      padding-top: 60px;
+      column-gap: 70px;
+    }
+  &--main-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #ececec;
+  }
+  &--main-content {
+    text-align: center;
+    padding: 170px 0;
+    gap: 30px;
+  }
+}
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  button,
+  .social__media,
+  .operation__clients,
+  .social__footer-icon,
+  .gallery {
+    cursor: pointer;
+  }
+  body {
+    font-family: $fontPrimary;
+    color: $brandColor;
+    letter-spacing: 0.03em;
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $lightColor;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: $brandColor;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  h4 {
+    color: $lightColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+  }
+  p {
+    line-height: 1.9;
+    color: $pharagraphColor;
+  }
+  footer {
+    background-color: $greyColor;
+  }
