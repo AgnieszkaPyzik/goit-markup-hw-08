@@ -1,16 +1,16 @@
 .team {
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 30px;
   padding-top: 50px;
  
   @include tablet {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: wrap;
     flex-basis: calc((100% - 90px) / 2);
-  }
+    margin: 0 auto;
+    flex-wrap: wrap;
+    }
 
   @include desktop {
     display: inline-flex;

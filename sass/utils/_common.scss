@@ -3,7 +3,12 @@
     padding: 0;
   }
   .section {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @include desktop {
+      padding: 94px 0;
+    }
+    
     &__header {
           font-weight: 700;
           font-size: 36px;
@@ -13,7 +18,7 @@
       
     &--index {
           display: none;
-          
+
           @include desktop {
             display: contents;
             text-align: center;
