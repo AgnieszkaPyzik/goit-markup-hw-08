@@ -6,6 +6,7 @@
     font-family: $fontPrimary;
     position: fixed;
     inset: 0;
+    padding: 48px 0 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,7 +25,9 @@
     &__address-menu {
         display: flex;
         flex-direction: column;
-        &__phone {
+        row-gap: 32px;
+    }
+    &__phone {
             font-weight: 500;
             font-style:normal;
             color: $themeColor;
@@ -32,7 +35,7 @@
             line-height: 1.17;
             letter-spacing: 0.02em;
         }
-        &__e-mail {
+    &__e-mail {
             font-style: normal;
             font-weight: 500;
             font-size: 24px;
@@ -41,9 +44,11 @@
             color: $pharagraphColor;
         }
     }
-}
+
     .mobile-menu {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     &__link {
         color: $brandColor;
         font-style: normal;
@@ -51,9 +56,12 @@
         font-size: 40px;
         line-height: 1.17;
         letter-spacing: 0.02em;
+        &:hover,
+        &:focus{
+            color: $themeColor ;
+        }
     }
 }
-
 .social-menu {
     display: flex;
     margin-top: 64px;
@@ -62,9 +70,15 @@
         font-size: 18px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        padding: 0  10px;
+        padding: 0 10px;
         color: $themeColor;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
         transform: rotate(90deg);
+    &--Instagram {
+        padding-left: 0;
     }
+    &--Linkedin {
+        border-right: none;
+    }
+}
 }
