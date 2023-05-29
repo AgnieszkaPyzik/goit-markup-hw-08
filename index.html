@@ -24,17 +24,17 @@
     <header>
       <div class="container container--main-body">
         <nav class="nav-header">
-        <a class="logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
-        <button
-          type="button"
-          class="toggle-btn js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="toggle-btn__icon" width="24" height="16">
-            <use href="./images/icons.svg#icon-menu_24px"></use>
-          </svg>
-        </button>
+          <a class="logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
+          <button
+            type="button"
+            class="toggle-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="toggle-btn__icon" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
           <ul class="menu">
             <li>
               <a class="menu__link-nav menu__link-nav--primary" href="./index.html"
@@ -403,6 +403,32 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-container__close-btn js-close-menu">
+        <svg class="menu-container__icon-btn" width="18" height="18">
+          <use href="./images/icons.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="mobile-menu__link">Agencja</a></li>
+        <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+        <li><a href="#" class="mobile-menu__link">Kontakt</a></li>
+      </ul>
+      <div>
+        <div class="menu-container__address-menu">
+          <a class="address-menu__phone" href="tel:+481111111"> +48 111 111 111 </a>
+          <a class="address-menu__e-mail" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+        </div>
+        <ul class="social-menu">
+          <li><a href="" class="social-menu__media">Istagram</a></li>
+          <li><a href="" class="social-menu__media">Twitter</a></li>
+          <li><a href="" class="social-menu__media">Facebook</a></li>
+          <li><a href="" class="social-menu__media">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form>
@@ -464,6 +490,14 @@
         </button>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

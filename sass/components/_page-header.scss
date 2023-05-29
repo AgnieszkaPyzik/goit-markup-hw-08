@@ -6,6 +6,7 @@
   column-gap: 46px;
 }
 .menu__link-nav {
+  display:none;
   font-family: $fontPrimary;
   font-weight: 500;
   font-size: 14px;
@@ -43,6 +44,7 @@
 }
 .menu__link-nav--secondary {
   display: inline-flex;
+  display:none;
   color: $pharagraphColor;
   align-items: center;
 }
