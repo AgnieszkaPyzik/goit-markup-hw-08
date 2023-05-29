@@ -5,8 +5,28 @@
   align-items: center;
   column-gap: 46px;
 }
+.menu__contacts {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+  }
+}
 .menu__link-nav {
   display:none;
+
+  @include tablet {
+    display: flex;
+  }
   font-family: $fontPrimary;
   font-weight: 500;
   font-size: 14px;
@@ -42,9 +62,8 @@
   display: block;
   margin-top: 28px;
 }
+
 .menu__link-nav--secondary {
-  display: inline-flex;
-  display:none;
   color: $pharagraphColor;
   align-items: center;
 }

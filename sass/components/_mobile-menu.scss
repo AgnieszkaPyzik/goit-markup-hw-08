@@ -42,13 +42,16 @@
         }
     }
 }
-    .mobile-menu__link {
-       color: $brandColor;
+    .mobile-menu {
+        display: inline-block;
+    &__link {
+        color: $brandColor;
         font-style: normal;
         font-weight: 500;
         font-size: 40px;
         line-height: 1.17;
         letter-spacing: 0.02em;
+    }
 }
 
 .social-menu {
