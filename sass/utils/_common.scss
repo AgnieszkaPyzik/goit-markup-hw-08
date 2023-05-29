@@ -5,12 +5,21 @@
   .section {
     padding: 94px 0;
     &__header {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.2;
-        text-align: center;
-        color: $brandColor;
-      }
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 1.2;
+          text-align: center;
+          color: $brandColor;
+      
+    &--index {
+          display: none;
+          
+          @include desktop {
+            display: contents;
+            text-align: center;
+          }
+  }
+}
     &--solution {
       background-image: url(../images/overlay.jpg);
       background-repeat: no-repeat;

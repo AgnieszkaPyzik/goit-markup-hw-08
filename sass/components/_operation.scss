@@ -1,4 +1,8 @@
 .operation {
+    display: none;
+
+    @include desktop {
+      
     display: inline-flex;
     justify-content: space-between;
     gap: 30px;
@@ -51,6 +55,6 @@
 .operation--customers {
   flex-basis: calc((100% - 150px) / 6);
 }
-
+}
 
  
