@@ -44,8 +44,8 @@
    .container {
     max-width: 480px;
     width: 100%;
-    margin: 0 auto;
     padding: 0 15px;
+    margin: 0 auto;
 
     @include tablet {
         max-width: 768px;
@@ -55,11 +55,19 @@
         max-width: 1200px;
     }
   &--end-body {
+    display:flex;
+    flex-direction: column;
+  
+    padding-top: 60px;
+
+    @include desktop {
       display: flex;
+      flex-direction: row;
       justify-content:space-between;
       padding-top: 60px;
       column-gap: 70px;
-    }
+      }
+  }
   &--main-body {
     display: flex;
     justify-content: space-between;
@@ -69,8 +77,12 @@
   }
   &--main-content {
     text-align: center;
-    padding: 170px 0;
+    padding: 118px 0;
     gap: 30px;
+
+    @include desktop {
+      padding: 170px 0;
+    }
   }
 }
   ul {
@@ -93,12 +105,16 @@
   }
   h1 {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $lightColor;
+
+    @include desktop {
+      font-size: 44px;
+    }
   }
   h3 {
     font-weight: 700;
@@ -120,4 +136,9 @@
   }
   footer {
     background-color: $greyColor;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
   }

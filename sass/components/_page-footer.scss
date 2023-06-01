@@ -1,5 +1,6 @@
 .footer {
-  padding: 20px 0 60px 0;
+padding:20px 0 60px 0;
+
 &__maps,
 &__address {
   font-family: $fontPrimary;
@@ -7,17 +8,21 @@
   line-height: 2.1;
   letter-spacing: 0.03em;
   font-style: normal;
+  align-items: center;
 }
 &__header {
   text-transform: uppercase;
   font-style: normal;
   padding: 12px 0 20px 0;
+
+  
 }
 &__media-item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 12px;
+  align-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   &:hover,
   &:focus,
@@ -29,9 +34,14 @@
   }
  }
  &__media-list {
-   display: flex;
-   align-items: center;
+   display: inline-flex;
+   align-content: center;
    gap: 10px;
+   padding-bottom: 60px;
+
+   @include desktop {
+    padding-bottom: 100px;
+   }
  }
  &__media-icon {
    fill: $lightColor;
