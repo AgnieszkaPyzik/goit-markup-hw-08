@@ -57,7 +57,8 @@
   &--end-body {
     display:flex;
     flex-direction: column;
-  
+    text-align: center;
+    justify-content: center;
     padding-top: 60px;
 
     @include desktop {
@@ -66,6 +67,7 @@
       justify-content:space-between;
       padding-top: 60px;
       column-gap: 70px;
+      text-align: left;
       }
   }
   &--main-body {

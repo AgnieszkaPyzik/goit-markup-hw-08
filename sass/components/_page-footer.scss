@@ -1,5 +1,11 @@
 .footer {
 padding:20px 0 60px 0;
+text-align: center;
+justify-items: center;
+
+@include desktop {
+  text-align: left;
+}
 
 &__maps,
 &__address {
@@ -8,21 +14,26 @@ padding:20px 0 60px 0;
   line-height: 2.1;
   letter-spacing: 0.03em;
   font-style: normal;
-  align-items: center;
+
 }
 &__header {
   text-transform: uppercase;
   font-style: normal;
   padding: 12px 0 20px 0;
+  text-align: center;
+  justify-items: center;
+
+  @include desktop {
+    text-align: left;
+  }
+}
 
   
-}
 &__media-item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 12px;
-  align-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   &:hover,
   &:focus,
@@ -34,10 +45,12 @@ padding:20px 0 60px 0;
   }
  }
  &__media-list {
-   display: inline-flex;
-   align-content: center;
-   gap: 10px;
-   padding-bottom: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+ 
 
    @include desktop {
     padding-bottom: 100px;
