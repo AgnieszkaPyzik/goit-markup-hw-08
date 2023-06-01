@@ -59,6 +59,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   padding-top: 30px;
   flex-basis: calc((100% - 30px) / 2);
@@ -67,6 +68,7 @@
   @include tablet {
   flex-basis: calc((100% - 60px) / 3);
   align-content: center;
+  justify-content: center;
   margin: 0 auto;
   }
 

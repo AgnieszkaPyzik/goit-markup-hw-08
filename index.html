@@ -176,7 +176,20 @@
           <ul class="team">
             <li>
               <figure class="team__item">
-                <img src="images/person_1.jpg" alt="John Doe photo" width="270" height="260" />
+                <img
+                src="./images/team/product-designer.jpg"
+                alt="Mężczyzna w okularach"
+                srcset="
+                 images/product-designer450.jpg 450w,
+                 images/product-designer450@2x.jpg 900w,
+                 images/product-designer354.jpg 354w,
+                 images/product-designer354@2x.jpg 708w,  
+                 images/product-designer270.jpg 270w,
+                 images/product-designer270@2x.jpg 540w,
+                 
+                "
+                sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
+             />
                 <figcaption>
                   <h3 class="team__name">John Doe</h3>
                   <p class="team__role">Product Manager</p>
@@ -342,6 +355,7 @@
     </main>
     <footer>
       <div class="container container--end-body">
+        <div class="end-body">
         <div>
           <a class="logo" href="./index.html">Web<span class="logo--light">Studio</span></a>
           <address>
@@ -383,6 +397,7 @@
             </li>
           </ul>
         </div>
+      </div>
         <div class="form-footer">
           <form>
             <h4 class="form-footer__header">zapisz się do newslettera</h4>

@@ -1,6 +1,8 @@
 .team {
   display: inline-flex;
   flex-direction: column;
+  align-content:  center;
+  justify-content: center;
   gap: 30px;
   padding-top: 50px;
  
@@ -15,6 +17,7 @@
   @include desktop {
     display: inline-flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-basis: calc((100% - 90px) / 4);
   }
 
