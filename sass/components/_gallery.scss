@@ -1,12 +1,33 @@
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   gap: 30px;
+
+  @include tablet {
+    display: inline-flex;
+    flex-basis: calc((100% - 30px) / 2);
+    gap: 30px;
+    justify-content:space-between;
+    align-content: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  
+  }
+  @include desktop {
+    display: inline-flex;
+    flex-basis: calc((100% - 90px) / 3);
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: normal;
+    column-gap: 30px;
+  }
+
     &__item {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 90px) / 3);
     gap: 30px;
     }
     &__card {
